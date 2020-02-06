@@ -2,8 +2,6 @@ import java.util.*;
 
 public class Ego {
 	List<egonet> networks;
-	// place your code here
-	// the nested class used to define a egonet
 	public static class egonet {
 		int center; // center of the egonet
 		Graph G; // subgraph that represents the egonet
@@ -52,7 +50,6 @@ public class Ego {
 
 	} 
 	public List<egonet> top(int k) {
-		// place your code here
 		List<egonet> topList = new ArrayList<egonet>();
 		networks.sort(new strengthComparator());
 		for (int i=0;i<k;i++) {
