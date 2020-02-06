@@ -2,9 +2,7 @@ import java.util.*;
 
 
 public class Influence {
-	// place your code here
 	List<influencer> feisbuk;
-	// the nested class used to define a influencer
 	public static class influencer {
 		int source; // the influencer
 		double power; // the impact of this influencer
@@ -32,7 +30,6 @@ public class Influence {
 	}
 
 	public Influence(Graph g) {
-		// place your code here
 		feisbuk = new ArrayList<influencer>();
 		double tempPower = 0;
 		int last = g.getV();
@@ -57,7 +54,6 @@ public class Influence {
 	} 
 
 	public List<influencer> top(int k) {
-		// place your code here
 		List<influencer> topList = new ArrayList<influencer>();
 		feisbuk.sort(new powerComparator());
 		for (int i=0;i<k;i++) {
