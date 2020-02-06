@@ -29,19 +29,5 @@ public class GraphTester {
 		endTime = System.nanoTime();
 		estTime = (endTime - startTime) / 1000000.0;
 		System.out.printf("You used %.2f ms\n", estTime);
-//		System.out.println("Bonus project:");
-//		CC cc = new CC(g);
-//		i = 0;
-//		System.out.println("======== Top 5 Connected Component ========");
-//		System.out.println("Total number of CC: " + cc.count());
-//		for (CC.cc element : cc.top(5)) {
-//			System.out.printf("[%d] Id: %2d Size: %d\n", i, element.getId(), element.getSize());
-//			i++;
-//		}
-//		System.out.println("======== Social Diameter ========");
-//		Graph cg = new Graph();
-//		GraphLoader.loadGraph(cg, "data/facebook_1000.txt");
-//		Diameter dm = new Diameter(cg);
-//		System.out.printf("Largest Diameter: %d\n", dm.getDiameter());
 	}
 }
